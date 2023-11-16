@@ -14,13 +14,15 @@ a {
     z-index: 999;
 }
 
-h1 {
+h1,
+#description {
     padding: 1em;
     color: #ff8200;
 }
 
 .container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin: 0 auto;
 }

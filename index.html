@@ -14,10 +14,7 @@
 
         <div class="container">
             <div id="carousel">
-                <img :src="slides[contatore].immagine" alt="">
-                <div id="description">
-
-                </div>
+                <img :src="slides[contatore].immagine" alt="">                
             </div>
 
             <div class="miniContainer">
@@ -26,6 +23,12 @@
                     <a class="back btn" v-on:click="back()">INDIETRO</a>
                 </div>
             </div>
+
+            <div id="description">
+                <h3>{{slides[contatore].titolo}}</h3>
+                <p>{{slides[contatore].testo}}</p>
+            </div>
+
         </div>
 
         <div class="btns">
