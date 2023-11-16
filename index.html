@@ -14,6 +14,7 @@
 
         <div class="container">
             <div id="carousel">
+                <img :src="slides[contatore].immagine" alt="">
                 <div id="description">
 
                 </div>
@@ -21,8 +22,8 @@
 
             <div class="miniContainer">
                 <div id="miniature">
-                    <a class="next btn" onclick="next()">AVANTI</a>
-                    <a class="back btn" onclick="back()">INDIETRO</a>
+                    <a class="next btn" v-on:click="next()">AVANTI</a>
+                    <a class="back btn" v-on:click="back()">INDIETRO</a>
                 </div>
             </div>
         </div>

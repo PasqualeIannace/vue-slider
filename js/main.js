@@ -20,6 +20,28 @@ const { createApp } = Vue
                 testo: 'Approfitta delle nostre offerte speciali. Sconti incredibili solo per te!'
             }
         ],
+
+        contatore : 0,
+      }
+    },
+
+    methods: {
+      next() {
+        if(this.contatore < this.slides.length - 1) {
+          this.contatore++;
+        } else {
+          this.contatore = 0;
+        }
+
+      },
+
+      back() {
+        if(this.contatore > 0) {
+          this.contatore--;
+        } else {
+          this.contatore = this.slides.length - 1;
+        }
+        
       }
     }
   }).mount('#app')
