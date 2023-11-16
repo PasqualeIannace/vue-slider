@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carosello VUE</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+
+    <div id="app">
+        <h1>Carosello Sfondi</h1>
+
+        <div class="container">
+            <div id="carousel">
+                <div id="description">
+
+                </div>
+            </div>
+
+            <div class="miniContainer">
+                <div id="miniature">
+                    <a class="next btn" onclick="next()">AVANTI</a>
+                    <a class="back btn" onclick="back()">INDIETRO</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="btns">
+            <button onclick="imgTimer()">Start timer</button>
+            <button onclick="stopTimer()">Stop timer</button>
+            <button onclick="reverseTimer()">Timer reverse</button>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
